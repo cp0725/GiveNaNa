@@ -1,0 +1,69 @@
+<!--
+ * @Author: 常培
+ * @Date: 2019-09-07 09:58:17
+ * @LastEditTime: 2019-09-07 11:21:43
+ * @Description: Reflow
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="" />
+</head>
+<body>
+  <div class="btn-wrap">
+    <button id="btn1">直接遍历插入1000次</button>
+    <button id="btn2">组装一个直接插入</button>
+    <button id="btn3">直接改变高度</button>
+    <button id="btn4">一边读一边写</button>
+  </div>
+  <div id="box1"></div>
+  <script>
+    // 我们的目标是在 box1 中插入1000个 p 标签
+    
+    var total = 1000
+    btn1.onclick = function () {
+      console.time('直接遍历插入1000次')
+      box1.innerHTML = ''
+      for(var i = 0; i < total; i++){
+        box1.innerHTML += '<p>插入p标签</p>'
+      }
+      console.timeEnd('直接遍历插入1000次')
+    }
+
+    btn2.onclick = function () {
+      console.time('组装一个直接插入')
+      box1.innerHTML = ''
+      var HTML = ''
+      for (var i = 0; i < total; i++) {
+        HTML += '<p>插入p标签</p>'
+      }
+      box1.innerHTML = HTML 
+      console.timeEnd('组装一个直接插入')
+    }
+
+    btn3.onclick = function () {
+      console.time('直接改变高度')
+      btn2.click()
+      var pList = document.querySelectorAll('#box1 p')
+      for (var i = 0; i < pList.length; i++) {
+        pList[i].style.height = '100px'
+      }
+      console.timeEnd('直接改变高度')
+    }
+
+    btn4.onclick = function () {
+      console.time('一边读一边写')
+      btn2.click()
+      var pList = document.querySelectorAll('#box1 p')
+      for (var i = 0; i < pList.length; i++) {
+        pList[i].style.height = '100px'
+        var h = pList[i].offsetHeight
+      }
+      console.timeEnd('一边读一边写')
+    }
+
+  </script>
+</body>
+</html>

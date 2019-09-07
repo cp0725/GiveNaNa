@@ -1,0 +1,177 @@
+<!--
+ * @Author: 常培
+ * @Date: 2019-09-07 11:14:57
+ * @LastEditTime: 2019-09-07 11:18:30
+ * @Description: 
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="" />
+
+<style>
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    width: 100%;
+}
+.box div{
+    height: 100px;
+}
+.left1{
+    width: 200px;
+    float: left;
+    background: pink;
+}
+.right1{
+    width: 200px;
+    float: right;
+    background: pink;
+}
+.center1{
+    background: red;
+    padding: 0 200px;
+}
+
+.left2{
+    position: absolute;
+    width: 200px;
+    left: 0;
+    background: pink;
+}
+.right2{
+    position: absolute;
+    width: 200px;
+    right: 0;
+    background: pink;
+}
+.center2{
+    position: absolute;
+    left: 200px;
+    right: 200px;
+    background: red;
+}
+
+.left3{
+    float: left;
+    width: 200px;
+    background: pink;
+}
+.right3{
+    float: left;
+    width: 200px;
+    background: pink;
+}
+.center3{
+    float: left;
+    width: calc(100% - 400px);
+    background: red;
+}
+
+.box4{
+    display: flex;
+}
+.left4{
+    width: 200px;
+    background: pink;
+    /*flex-shrink: 0;*/
+}
+.right4{
+    width: 200px;
+    background: pink;
+    /*flex-shrink: 0;*/
+}
+.center4{
+    background: red;
+    /*flex-grow: 1;*/
+    flex: 1;
+}
+
+.box5{
+    display: table;
+}
+.left5{
+    display: table-cell;
+    width: 200px;
+    background: pink;
+}
+.right5{
+    display: table-cell;
+    width: 200px;
+    background: pink;
+}
+.center5{
+    display: table-cell;
+    background: red;
+}
+
+.box6{
+    display: grid;
+    grid-template-rows: 100px;
+    grid-template-columns: 300px auto 300px;
+    width: 100%;
+}
+.left6{
+    background: pink;
+}
+.right6{
+    background: pink;
+}
+.center6{
+    background: red;
+}
+
+</style>
+
+  
+</head>
+<body>
+
+  <h1>方案一：浮动</h1>
+  <div class="box">
+    <div class="left1"></div>
+    <div class="right1"></div>
+    <div class="center1">圣杯布局和双飞翼布局解决问题的方案在前一半是相同的，也就是三栏全部float浮动，但左右两栏加上负margin让其跟中间栏div并排，以形成三栏布局。</div>
+  </div>
+
+  <h1>方案二：定位</h1>
+  <div class="box">
+    <div class="left2"></div>
+    <div class="center2">圣杯布局和双飞翼布局解决问题的方案在前一半是相同的，也就是三栏全部float浮动，但左右两栏加上负margin让其跟中间栏div并排，以形成三栏布局。</div>
+    <div class="right2"></div>
+  </div>
+
+  <h1>方案三：calc</h1>
+  <div class="box">
+    <div class="left3"></div>
+    <div class="center3">圣杯布局和双飞翼布局解决问题的方案在前一半是相同的，也就是三栏全部float浮动，但左右两栏加上负margin让其跟中间栏div并排，以形成三栏布局。</div>
+    <div class="right3"></div>
+  </div>
+
+  <h1>方案四：flex</h1>
+  <div class="box box4">
+    <div class="left4"></div>
+    <div class="center4">圣杯布局和双飞翼布局解决问题的方案在前一半是相同的，也就是三栏全部float浮动，但左右两栏加上负margin让其跟中间栏div并排，以形成三栏布局。</div>
+    <div class="right4"></div>
+  </div>
+
+  <h1>方案五：表格</h1>
+  <div class="box box5">
+    <div class="left5"></div>
+    <div class="center5">圣杯布局和双飞翼布局解决问题的方案在前一半是相同的，也就是三栏全部float浮动，但左右两栏加上负margin让其跟中间栏div并排，以形成三栏布局。</div>
+    <div class="right5"></div>
+  </div>
+
+  <h1>方案六：栅格</h1>
+  <div class="box box6">
+    <div class="left6"></div>
+    <div class="center6">圣杯布局和双飞翼布局解决问题的方案在前一半是相同的，也就是三栏全部float浮动，但左右两栏加上负margin让其跟中间栏div并排，以形成三栏布局。</div>
+    <div class="right6"></div>
+  </div>
+
+</body>
+</html>
