@@ -1,7 +1,7 @@
 <!--
  * @Author: 常培
  * @Date: 2019-09-07 11:31:00
- * @LastEditTime: 2019-09-07 11:37:02
+ * @LastEditTime: 2019-09-07 11:53:04
  * @Description: README
  -->
 # GiveNaNa
@@ -16,4 +16,4 @@ npm install
 npm run dev
 
 构建
-webpack
+npm run build

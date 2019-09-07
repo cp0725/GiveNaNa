@@ -24,7 +24,8 @@
     "markdown-loader": "^5.1.0",
     "style-loader": "^1.0.0",
     "text-loader": "0.0.1",
-    "webpack": "^4.39.2"
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.8"
   },
   "dependencies": {
     "highlight.js": "^9.15.10",

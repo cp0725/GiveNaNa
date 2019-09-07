@@ -1,7 +1,7 @@
 /*
  * @Author: 常培
  * @Date: 2019-08-24 17:13:22
- * @LastEditTime: 2019-09-06 21:53:16
+ * @LastEditTime: 2019-09-07 11:51:18
  * @Description: webpack配置啦
  */
 const path = require('path')
@@ -13,7 +13,7 @@ module.exports = {
   mode: 'development',
   entry: './src/main.js', // 入口文件
   output: {
-    path: path.resolve(__dirname, 'dist/js'),  // 输出路径
+    path: path.resolve(__dirname, 'dist'),  // 输出路径
     filename: 'main.min.js'   // 出口文件名称
   },
   devServer: {
