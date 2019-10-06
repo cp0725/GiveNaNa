@@ -48,3 +48,43 @@ html,body{
 .past{
   color: #2bb8aa;
 }
+#return{
+  width: 50px;
+  height: 50px;
+  box-shadow: 0px 0px 6px 0px #ccc;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, .2);
+  border: 1px solid #e2e0e0;
+  font-size: 22px;
+  line-height: 46px;
+  text-align: center;
+  color: pink;  
+}
+
+#return{
+  display: none;
+}
+#move #return{
+  display: block;
+}
+#move #topic{
+  margin-right: 0;
+}
+#move #answer{
+  margin-left: 0;
+}
+#move .wrap{
+  height: auto;
+}
+#move #topic, 
+#move #answer {
+  height: auto;
+  width: 100%;
+  box-shadow: 0px 0px 0px 0px #ccc;
+  box-sizing: border-box;
+  padding: 0;
+  border-radius: 0;
+}

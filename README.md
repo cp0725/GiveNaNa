@@ -6,6 +6,8 @@
  -->
 # GiveNaNa
 
+https://cp0725.github.io/GiveNaNa/dist/index.html
+
 克隆
 git clone git@github.com:cp0725/GiveNaNa.git
 

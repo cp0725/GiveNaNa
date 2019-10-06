@@ -52,6 +52,7 @@ pre{
   padding: 10px;
   border-radius: 5px;
   margin-top: 22px; 
+  overflow-y: auto;
 }
 pre code{
   background: #000;
