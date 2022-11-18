@@ -17,7 +17,7 @@
     "babel-loader": "^8.0.6",
     "css-loader": "^3.2.0",
     "file-loader": "^4.2.0",
-    "html-webpack-plugin": "^3.2.0",
+    "html-webpack-plugin": "^5.5.0",
     "install": "^0.13.0",
     "markdown": "^0.5.0",
     "markdown-js": "0.0.4",
@@ -25,7 +25,7 @@
     "style-loader": "^1.0.0",
     "text-loader": "0.0.1",
     "webpack": "^4.39.2",
-    "webpack-cli": "^3.3.8"
+    "webpack-cli": "^3.3.12"
   },
   "dependencies": {
     "highlight.js": "^9.15.10",
